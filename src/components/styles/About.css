@@ -7,3 +7,7 @@
     text-wrap: ;
     text-align: right;
 }
+.projects h1 {
+    font-family: 'Roboto';
+    font-size: 36px;
+}
