@@ -6,7 +6,7 @@ const ProjectItem = ({ image, name, description, url }) => {
             <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
             <h2> {name} </h2>
             <p> {description} </p>
-            <a href={url} target="_blank" rel="noopener noreferrer" className="viewProjectLink">View project</a>
+            <a href={url} target="_blank" rel="noopener noreferrer" className="viewProjectLink"><p>View project</p></a>
         </div>
     )
 }

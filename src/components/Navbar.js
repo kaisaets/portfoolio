@@ -12,11 +12,11 @@ const Navbar = () => {
           <IoReorderFour /> 
         </button>
       </div>
-      <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contacts</a>
+      <nav className="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contacts</a>
       </nav>
     </div>
     )

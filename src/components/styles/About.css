@@ -3,11 +3,14 @@
     width: 100%;
     font-family: 'Open Sans';
     color: #122023;
-
-    text-wrap: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: right;
 }
-.projects h1 {
+
+.about h1 {
     font-family: 'Roboto';
     font-size: 36px;
 }
