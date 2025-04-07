@@ -13,8 +13,6 @@ const Projects = () => {
         <ProjectItem name="Katselabor" image={katselabor} description="My very first website built with HTML and CSS" url="https://vso24ets.ita.voco.ee/veebiarendus/lopuprojekt/index.html" />
         <ProjectItem name="Internet safety quiz" image={vepso} description="Educational game made for a school competition in a team" url="https://vepso.ita.voco.ee/" />
         <ProjectItem name="Minitoit" image={minitoit} description="Recipe collection" url="https://vso24viigi.ita.voco.ee/minitoit2/"/>
-      
-
       </div>
     </div>
   )

@@ -51,12 +51,11 @@
 .skillIcon {
   font-size: 60px;
   transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
   color: #122023;
 }
 
 .skillIcon:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
   color: #122023f1;
 }
 
@@ -75,6 +74,7 @@
 }
 .githubStats img {
   width: 80%;
+  max-width: 100%;
   height: 80%;
   object-fit: cover; 
 }
