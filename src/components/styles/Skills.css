@@ -1,59 +1,78 @@
 .skills {
-    font-size: 16px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: #122023;
-    background-color: #f9f5e3;
-    padding: 20px 0;
-  }
-  
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #122023;
+  background-color: #f9f5e3;
+  padding: 20px 0;
+  scroll-margin-top: 80px;
+}
+
+.skills h1 {
+  color: #122023;
+  font-size: 36pt;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.skills .list {
+  list-style: none;
+  width: 80%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.item {
+  text-align: center;
+}
+
+.item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.list span {
+  color: #122023;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skillIcon {
+  font-size: 60px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  color: #122023;
+}
+
+.skillIcon:hover {
+  transform: scale(1.15);
+  color: #122023f1;
+}
+
+@media only screen and (max-width: 600px) {
+
   .skills h1 {
-    color: #122023;
-    font-size: 36pt;
-    font-family: 'Roboto';
-    text-align: center;
-    margin: 20px 0;
-    }
-  
-  .skills .list {
-    list-style: none;
-    width: 60%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
+    font-size: 28pt;
   }
-
-  .item {
-    text-align: center;
-  }
-  
   .item h2 {
-    font-size: 24px ;
+    font-size: 22px;
+  }
+  .list {
+    padding: 0;
   }
 
-  .list span {
-    font-size: 20px;
-    color: #122023;
+  .skillIcon {
+    font-size: 48px;
   }
-  
-  @media only screen and (max-width: 600px) {
-    .about h2 {
-      font-size: 40px;
-    }
-
-      .skills {
-        text-align: center;
-      }
-      .list {
-        padding: 0;
-      }
-    
-      .skills h2 {
-        font-size: 30px;
-      }
-    }
+}

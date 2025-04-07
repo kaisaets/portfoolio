@@ -7,7 +7,7 @@ import './styles/About.css'
 const About = () =>  {
     return (
         <>
-        <div className="about">
+        <div id="about" className="about">
         <h1>About me</h1>
           <p>My name is Kaisa Ets, and I am 30 years old. I have previously studied at University of
             Tartu Pärnu College, where I graduated from tourism and hotel management. After working

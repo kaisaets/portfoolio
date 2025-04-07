@@ -1,26 +1,44 @@
 import React from "react";
-import './styles/Skills.css'
+import "./styles/Skills.css";
+import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import {
+  SiStyledcomponents,
+  SiMysql,
+  SiExpress,
+  SiMariadbfoundation,
+  SiMongodb
+} from "react-icons/si";
 
-const Skills = () =>  {
-    return (
-        <div className="skills">
-            <h1>Skills</h1>
-            <ul className="list">
-            <li className="item">
-            <h2> Front-End</h2>
-            <span>
-              ReactJS, HTML, CSS, StyledComponents
-            </span>
-          </li>
-          <li className="item">
-            <h2>Back-End</h2>
-            <span>
-              NodeJS, ExpressJS, MySQL, MariaDB
-            </span>
-          </li>
-            </ul>
-        </div>
-    )
-}
+const Skills = () => {
+  return (
+    <div id="skills" className="skills">
+      <h1>Skills</h1>
+      <ul className="list">
+        <li className="item">
+          <h2> Front-End</h2>
+          <span>
+            <IoLogoJavascript className="skillIcon" title="JavaScript" />
+            <FaReact className="skillIcon" title="React" />
+            <FaHtml5 className="skillIcon" title="HTML5" />
+            <FaCss3Alt className="skillIcon" title="CSS3" />
+            <SiStyledcomponents className="skillIcon" title="Styled Components"
+            />
+          </span>
+        </li>
+        <li className="item">
+          <h2>Back-End</h2>
+          <span>
+            <FaNodeJs className="skillIcon" title="Node.js" />
+            <SiExpress className="skillIcon" title="Express.js" />
+            <SiMysql className="skillIcon" title="MySQL" />
+            <SiMariadbfoundation className="skillIcon" title="MariaDB" />
+            <SiMongodb className="skillIcon" title="Mongodb"/>
+          </span>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
-export default Skills
+export default Skills;

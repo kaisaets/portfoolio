@@ -7,7 +7,7 @@ import minitoit from '../assets/minitoit.png'
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <div id='projects' className='projects'>
       <h1>Projects</h1>
       <div className='projectList'>
         <ProjectItem name="Katselabor" image={katselabor} description="My very first website built with HTML and CSS" url="https://vso24ets.ita.voco.ee/veebiarendus/lopuprojekt/index.html" />

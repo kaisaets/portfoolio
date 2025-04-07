@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
     return(
-        <div className="footer">
+        <div id="contacts" className="footer">
            <div className="icons">
             <a href="https://github.com/kaisaets" target="_blank" rel="noopener noreferrer">
            <FaGithub className="icon" />
