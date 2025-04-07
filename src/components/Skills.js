@@ -7,7 +7,7 @@ import {
   SiMysql,
   SiExpress,
   SiMariadbfoundation,
-  SiMongodb
+  SiMongodb,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -22,7 +22,9 @@ const Skills = () => {
             <FaReact className="skillIcon" title="React" />
             <FaHtml5 className="skillIcon" title="HTML5" />
             <FaCss3Alt className="skillIcon" title="CSS3" />
-            <SiStyledcomponents className="skillIcon" title="Styled Components"
+            <SiStyledcomponents
+              className="skillIcon"
+              title="Styled Components"
             />
           </span>
         </li>
@@ -33,8 +35,16 @@ const Skills = () => {
             <SiExpress className="skillIcon" title="Express.js" />
             <SiMysql className="skillIcon" title="MySQL" />
             <SiMariadbfoundation className="skillIcon" title="MariaDB" />
-            <SiMongodb className="skillIcon" title="Mongodb"/>
+            <SiMongodb className="skillIcon" title="Mongodb" />
           </span>
+        </li>
+        <li className="item githubStats">
+          <h2>My most used languages according to GitHub</h2>
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=kaisaets&layout=compact&theme=default&bg_color=f9f5e3&hide_border=true&hide_title=true"
+            alt="My GitHub Top Languages"
+            className="statsCard"
+          />
         </li>
       </ul>
     </div>
