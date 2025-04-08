@@ -2,14 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 .navbar {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 70px;
+  min-height: 70px;
+  overflow: hidden;
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 10px;
   background-color: #f9f5e3;
@@ -20,32 +20,49 @@ html {
   color: #122023;
   font-size: 16pt;
   text-decoration: none;
-  margin: 20px;
+  margin: 10px;
+}
+.navbar a:hover {
+  color: #122023ad;
 }
 
 .links {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   font-weight: bold;
-  font-family: 'Open Sans';
-
+  font-family: "Open Sans";
 }
 navbar a:hover {
   color: #122023ad;
 }
 
 .toggleButton {
-  width: 100%;
-  height: 100px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 101;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-
+  justify-content: center;
+  height: 50px;
+  width: 50px;
 }
 
+.toggleButton button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggleButton button:hover {
+  background-color: #f2e9dc1b;
+  transform: scale(1.01);
+}
 .toggleButton svg {
   font-size: 50px;
   color: #122023;
@@ -55,27 +72,19 @@ navbar a:hover {
   color: #122023ad;
 }
 
-.toggleButton button {
-  margin-right: 20px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
 
 #open {
   height: 40vh;
 }
 
-#open .links {
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 100px;
-}
 
 #open a {
   width: 100%;
   text-align: center;
+}
+
+#close .links {
+  display: none;
 }
 
 @media only screen and (max-width: 900px) {
@@ -89,7 +98,13 @@ navbar a:hover {
     display: flex;
   }
 
-  #close a {
+  #open .links {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  #close .links {
     display: none;
   }
 }
@@ -104,10 +119,13 @@ navbar a:hover {
   }
 
   #open {
-    height: 100px;
+    height: auto;
   }
 
-  #open .links {
+  #open .links,
+  #close .links {
+    display: flex;
     flex-direction: row;
+    margin-top: 0;
   }
 }

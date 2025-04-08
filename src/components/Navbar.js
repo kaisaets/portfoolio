@@ -13,10 +13,10 @@ const Navbar = () => {
         </button>
       </div>
       <nav className="links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contacts</a>
+        <a href="#home" onClick={() => setExpandNavbar(false)}>Home</a>
+        <a href="#about" onClick={() => setExpandNavbar(false)}>About</a>
+        <a href="#projects" onClick={() => setExpandNavbar(false)}>Projects</a>
+        <a href="#contacts" onClick={() => setExpandNavbar(false)}>Contacts</a>
       </nav>
     </div>
     )
